@@ -1,0 +1,20 @@
+{
+  "name": "authorWatching",
+  "version": "1.0.0",
+  "description": "developing of site about a plov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "imagemin-pngquant": "^7.0.0"
+  }
+}
