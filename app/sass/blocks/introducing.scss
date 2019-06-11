@@ -1,0 +1,41 @@
+.introducing{
+  background: url('../img/author/bg.jpg') no-repeat;
+  background-position: center -100px;
+  padding-top: 45px;
+}
+
+.introducing__wrapper{
+  @include wrapper;
+  background: url('../img/author/glass-mobile.png') no-repeat;
+  background-position: center 100%;
+  padding-bottom: 307px;
+}
+
+.introducing__title{
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-family: BebasRegular;
+  margin-bottom: 17px;
+}
+
+.introducing__info{
+  width: 319px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  padding: 15px 12px 17px 18px;
+}
+
+.introducing__text{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 142%;
+}
+
+.introducing__mark{
+  color: #1E78FF;
+}

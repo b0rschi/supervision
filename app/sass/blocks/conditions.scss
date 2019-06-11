@@ -1,0 +1,19 @@
+.conditions{
+  margin-bottom: 42px;
+}
+
+.conditions__wrapper{
+  @include responsive;
+}
+
+.conditions__title{
+  font-family: BebasRegular;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2F2F2F;
+
+  /* for responsive wrapper */
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

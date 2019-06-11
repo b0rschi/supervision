@@ -1,0 +1,108 @@
+.cost{
+  margin-bottom: 50px;
+}
+
+.cost__wrapper{
+  @include responsive;
+}
+
+.cost__title{
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+
+  /*responsive */
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+}
+
+.cost__col{
+  display: flex;
+}
+
+.cost__table-cap{
+  display: block;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: center;
+  background: #FBCC01;;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2F2F2F;
+}
+
+.cost__tabe-cap--cost{
+  width: 120px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.cost__table-cap--name{
+  flex-grow: 1;
+  border-right: 1px solid #ffffff;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.cost__row{
+  display: flex;
+}
+
+.cost__cell{
+  display: block;
+}
+
+
+.cost__cell--cost{
+  width: 120px;
+  flex-shrink: 0;
+  border: 1px solid #C8C8C8;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+}
+
+.cost__cell--name{
+  padding: 5px 15px 10px 8px;
+  border: 1px solid #C8C8C8;
+  border-top: none;
+  flex-grow: 1;
+}
+
+.cost__cell--name.cost__cell--bottom{
+  border-radius: 0 0 0 5px;
+}
+
+.cost__cell--cost.cost__cell--bottom{
+  border-radius: 0 0 5px 0;
+}
+
+.cost__table-cap--mobile, .cost__cell--mobile{
+  display: none;
+}
+
+.cost__table{
+  margin-bottom: 23px;
+}
+
+.cost__alert{
+  background: #FBCC01 url('../img/author/sign-mobile.svg') no-repeat;
+  background-position: center 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 142%;
+  /* or 20px */
+  text-align: center;
+
+  color: #2F2F2F;
+  padding: 116px 12px 29px 14px;
+}

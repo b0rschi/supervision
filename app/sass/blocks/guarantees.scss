@@ -1,0 +1,50 @@
+.guarantees{
+  padding-top: 345px;
+  background: url('../img/author/guarantees-mobile.jpg') no-repeat;
+  background-position: center 40px;
+  position: relative;
+  margin-bottom: 45px;
+
+  &:before{
+    content: '';
+    display: block;
+    background: $primary-color;
+    height: 244px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.guarantees__wrapper{
+  @include responsive;
+
+}
+
+
+.guarantees__title{
+  font-size: 26px;
+  line-height: 26px;
+  font-family: BebasRegular;
+  color: #2F2F2F;
+
+
+  /*responsive */
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+
+.gurantees__text{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 142%;
+  /* or 20px */
+  margin-bottom: 15px;
+  color: #636363;
+}

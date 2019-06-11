@@ -1,0 +1,29 @@
+@mixin wrapper{
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 360px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-tablet{
+  box-sizing: border-box;
+  padding: 0 40px;
+  width: $tablet-width;
+  margin: 0 auto;
+}
+
+@mixin wrapper-desktop{
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin responsive{
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px;
+}

@@ -1,0 +1,20 @@
+.questions{
+  margin-bottom: 63px;
+}
+
+.questions__wrapper{
+  @include wrapper;
+  text-align: center;
+}
+
+.questions__title{
+  font-size: 26px;
+line-height: 26px;
+text-align: center;
+
+color: #2F2F2F;
+font-family: BebasRegular;
+margin-bottom: 21px;
+
+}
+

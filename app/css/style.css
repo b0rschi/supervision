@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 142%;
+  color: #636363;
+  background: #ffffff; }
+
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
+@font-face {
+  font-family: "BebasRegular";
+  src: url("../fonts/BebasRegular/BebasRegular.eot");
+  src: url("../fonts/BebasRegular/BebasRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasRegular/BebasRegular.woff") format("woff"), url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BebasBook";
+  src: url("../fonts/BebasBook/BebasBook.eot");
+  src: url("../fonts/BebasBook/BebasBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasBook/BebasBook.woff") format("woff"), url("../fonts/BebasBook/BebasBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BebasBold";
+  src: url("../fonts/BebasBold/BebasBold.eot");
+  src: url("../fonts/BebasBold/BebasBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasBold/BebasBold.woff") format("woff"), url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BebasLight";
+  src: url("../fonts/BebasLight/BebasLight.eot");
+  src: url("../fonts/BebasLight/BebasLight.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasLight/BebasLight.woff") format("woff"), url("../fonts/BebasLight/BebasLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BebasThin";
+  src: url("../fonts/BebasThin/BebasThin.eot");
+  src: url("../fonts/BebasThin/BebasThin.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasThin/BebasThin.woff") format("woff"), url("../fonts/BebasThin/BebasThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.fade-enter-active {
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+.fade-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
+.introducing {
+  background: url("../img/author/bg.jpg") no-repeat;
+  background-position: center -100px;
+  padding-top: 45px; }
+
+.introducing__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  width: 360px;
+  margin: 0 auto;
+  background: url("../img/author/glass-mobile.png") no-repeat;
+  background-position: center 100%;
+  padding-bottom: 307px; }
+
+.introducing__title {
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-family: BebasRegular;
+  margin-bottom: 17px; }
+
+.introducing__info {
+  width: 319px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  padding: 15px 12px 17px 18px; }
+
+.introducing__text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 142%; }
+
+.introducing__mark {
+  color: #1E78FF; }
+
+.conditions {
+  margin-bottom: 42px; }
+
+.conditions__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px; }
+
+.conditions__title {
+  font-family: BebasRegular;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2F2F2F;
+  /* for responsive wrapper */
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.list__item {
+  padding-left: 25px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 142%;
+  /* or 20px */
+  position: relative;
+  color: #636363; }
+  .list__item:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #1E78FF;
+    top: 4px;
+    left: -0px;
+    border-radius: 50%; }
+  .list__item:after {
+    content: '';
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 20px 120px 20px 20px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    top: 9px;
+    left: 4px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.advantages {
+  padding-top: 375px;
+  background: url("../img/author/door-mobile.png") no-repeat;
+  background-position: center 0;
+  position: relative;
+  margin-bottom: 51px; }
+  .advantages:before {
+    content: '';
+    display: block;
+    background: #1E78FF;
+    width: 100%;
+    height: 163px;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+
+.advantages__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px; }
+
+.advantages__title {
+  width: 292px;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+  /* responsive */
+  width: 292px;
+  margin: 0 auto;
+  margin-bottom: 13px; }
+
+.insertion {
+  margin-bottom: 35px; }
+
+.insertion__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px; }
+
+.insertion__title {
+  font-size: 26px;
+  line-height: 26px;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+  margin-bottom: 20px;
+  text-align: center;
+  /*responsive */
+  text-align: center; }
+
+.insertion__cap {
+  background: #FBCC01;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2F2F2F;
+  padding: 10px 28px 10px 22px; }
+
+.insertion__cap--mobile-bottom {
+  border-radius: 0; }
+
+.insertion__list {
+  border: 1px solid #C8C8C8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 0px 0px 0px;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 21px;
+  padding-bottom: 30px;
+  padding-left: 6px;
+  padding-right: 6px; }
+
+.insertion__list--mobile-bottom {
+  border: 1px solid #C8C8C8;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px; }
+
+.guarantees {
+  padding-top: 345px;
+  background: url("../img/author/guarantees-mobile.jpg") no-repeat;
+  background-position: center 40px;
+  position: relative;
+  margin-bottom: 45px; }
+  .guarantees:before {
+    content: '';
+    display: block;
+    background: #1E78FF;
+    height: 244px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
+.guarantees__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px; }
+
+.guarantees__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-family: BebasRegular;
+  color: #2F2F2F;
+  /*responsive */
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+
+.gurantees__text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 142%;
+  /* or 20px */
+  margin-bottom: 15px;
+  color: #636363; }
+
+.cost {
+  margin-bottom: 50px; }
+
+.cost__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-width: 340px;
+  width: 80%;
+  max-width: 550px; }
+
+.cost__title {
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+  /*responsive */
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.cost__col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.cost__table-cap {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: center;
+  background: #FBCC01;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2F2F2F; }
+
+.cost__tabe-cap--cost {
+  width: 120px;
+  border-radius: 0px 5px 0px 0px; }
+
+.cost__table-cap--name {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-right: 1px solid #ffffff;
+  border-radius: 5px 0px 0px 0px; }
+
+.cost__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.cost__cell {
+  display: block; }
+
+.cost__cell--cost {
+  width: 120px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  border: 1px solid #C8C8C8;
+  border-top: none;
+  border-left: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1E78FF; }
+
+.cost__cell--name {
+  padding: 5px 15px 10px 8px;
+  border: 1px solid #C8C8C8;
+  border-top: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.cost__cell--name.cost__cell--bottom {
+  border-radius: 0 0 0 5px; }
+
+.cost__cell--cost.cost__cell--bottom {
+  border-radius: 0 0 5px 0; }
+
+.cost__table-cap--mobile, .cost__cell--mobile {
+  display: none; }
+
+.cost__table {
+  margin-bottom: 23px; }
+
+.cost__alert {
+  background: #FBCC01 url("../img/author/sign-mobile.svg") no-repeat;
+  background-position: center 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 142%;
+  /* or 20px */
+  text-align: center;
+  color: #2F2F2F;
+  padding: 116px 12px 29px 14px; }
+
+.questions {
+  margin-bottom: 63px; }
+
+.questions__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  width: 360px;
+  margin: 0 auto;
+  text-align: center; }
+
+.questions__title {
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+  margin-bottom: 21px; }
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  background: #1E78FF;
+  width: 297px;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 155.28%;
+  /* or 25px */
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1; }
+  .btn:hover {
+    opacity: 0.75; }
