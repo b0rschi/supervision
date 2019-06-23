@@ -38,7 +38,7 @@
 }
 
 
-.gurantees__text{
+.guarantees__text{
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -47,4 +47,103 @@
   /* or 20px */
   margin-bottom: 15px;
   color: #636363;
+}
+
+
+@media (min-width: $tablet-width) {
+  .guarantees{
+    padding-top: 20px;
+    /*
+    background: url('../img/author/guarantees-tablet.jpg') no-repeat;
+    background-position: 7% 50px; */
+    background: none;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+
+    &:before{
+      width: 45%;
+      height: 435px;
+      top: 15px;
+    }
+  }
+
+  .guarantees__wrapper{
+    @include responsive-tablet;
+    padding-left: 53%;
+    position: relative;
+    max-width: 1100px;
+  }
+
+  .guarantees__info{
+      position: relative;
+
+   &:before{
+      content: '';
+      background: url('../img/author/guarantees-tablet.jpg');
+      display: block;
+      width: 379px;
+      height: 316px;
+      position: absolute;
+      top: 10px;
+      left: -420px;
+    }
+  }
+
+  .guarantees__title{
+    font-size: 32px;
+    line-height: 32px
+  }
+
+  .guarantees__text{
+    font-size: 16px;
+line-height: 142%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .guarantees{
+
+    margin-top: -200px;
+
+    padding-top: 180px;
+
+    margin-bottom: 82px;
+    padding-bottom: 150px;
+
+    &:before{
+      height: 701px;
+      width: 35%;
+    }
+  }
+
+  .guarantees__wrapper{
+    @include wrapper-desktop;
+    padding-left: 600px;
+    padding-top: 50px;
+  }
+
+  .guarantees__title{
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 33px;
+  }
+
+  .guarantees__text{
+    font-size: 18px;
+    line-height: 142%;
+  }
+
+  .guarantees__info{
+
+    &:before{
+      background: url('../img/author/guarantees-desk.jpg') no-repeat;
+      background-position: center center;
+      width: 547px;
+      height: 456px;
+      top: -140px;
+      left: -620px;
+    }
+  }
 }

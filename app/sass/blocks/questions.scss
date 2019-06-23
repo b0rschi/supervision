@@ -9,12 +9,33 @@
 
 .questions__title{
   font-size: 26px;
-line-height: 26px;
-text-align: center;
+  line-height: 26px;
+  text-align: center;
+  color: #2F2F2F;
+  font-family: BebasRegular;
+  margin-bottom: 21px;
+}
 
-color: #2F2F2F;
-font-family: BebasRegular;
-margin-bottom: 21px;
+@media (min-width: $tablet-width) {
+  .questions__wrapper{
+    @include wrapper-tablet;
+  }
 
+  .questions__title{
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .questions__wrapper{
+    @include wrapper-desktop;
+  }
+
+  .questions__title{
+    font-size: 46px;
+    line-height: 46px;
+  }
 }
 

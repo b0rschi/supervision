@@ -23,3 +23,21 @@
     opacity: 0.75;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .btn{
+    font-size: 16px;
+    line-height: 155.28%;
+    width: 358px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .btn{
+    width: 408px;
+    font-size: 19px;
+line-height: 33px;
+  }
+}

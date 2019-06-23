@@ -39,8 +39,9 @@
 }
 
 .cost__tabe-cap--cost{
-  width: 120px;
+  width: 121px;
   border-radius: 0px 5px 0px 0px;
+  flex-shrink: 0;
 }
 
 .cost__table-cap--name{
@@ -71,6 +72,7 @@
 }
 
 .cost__cell--name{
+  box-sizing: border-box;
   padding: 5px 15px 10px 8px;
   border: 1px solid #C8C8C8;
   border-top: none;
@@ -105,4 +107,156 @@
 
   color: #2F2F2F;
   padding: 116px 12px 29px 14px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .cost{
+    margin-bottom: 47px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 25%;
+      background: $primary-color;
+      position: absolute;
+      left: 0;
+      bottom: 40%;
+    }
+  }
+
+  .cost__wrapper{
+    @include responsive-tablet;
+  }
+
+  .cost__alert{
+    max-width: 850px;
+    margin: 0 auto;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 142%;
+    padding: 34px 30px 30px 150px;
+    background: $second-color url('../img/author/sign-tablet.svg') no-repeat;
+    background-position: 34px 24px;
+  }
+
+  .cost__title{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 38px;
+  }
+
+  .cost__table{
+    margin: 0 auto;
+    padding: 19px 13px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    max-width: 910px;
+    margin-bottom: 50px;
+  }
+
+  .cost__table-cap--mobile, .cost__cell--mobile{
+    display: block;
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  .cost__cell--mobile{
+    padding: 5px 15px 10px 8px;
+    font-size: 16px;
+    line-height: 142%;
+    /* or 23px */
+    box-sizing: border-box;
+    color: #636363;
+    border: 1px solid #C8C8C8;
+    border-top: none;
+    border-left: none;
+  }
+
+  .cost__cell--name, .cost__cell--cost{
+    font-size: 16px;
+    line-height: 142%;
+    /* or 23px */
+
+
+  }
+
+  .cost__table-cap--mobile{
+    border-radius: 0 5px 0 0;
+  }
+
+  .cost__tabe-cap--cost{
+    border-radius: 0;
+    border-right: 1px solid #ffffff;
+  }
+
+  .cost__cell--name{
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .cost{
+    margin-bottom: 77px;
+  }
+
+  .cost__wrapper{
+    @include wrapper-desktop;
+  }
+
+  .cost__title{
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .cost__table{
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .cost__table-cap{
+    font-size: 20px;
+line-height: 26px;
+  }
+
+  .cost__cell--cost, .cost__tabe-cap--cost{
+    width: 170px;
+  }
+
+  .cost__cell{
+    font-size: 18px;
+line-height: 142%;
+padding: 20px 25px;
+  }
+
+  .cost__table{
+    padding: 45px 40px;
+  }
+
+  .cost__alert{
+    max-width: none;
+    width: 1083px;
+    padding: 50px 59px 50px 240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 18px;
+line-height: 142%;
+text-align: left;
+  background: $second-color url('../img/author/sign-desk.svg') no-repeat;
+  background-position: 64px 21px;
+  }
 }

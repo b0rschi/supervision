@@ -52,3 +52,148 @@
   border-top: none;
   border-radius: 0px 0px 5px 5px;
 }
+
+@media (min-width: $tablet-width) {
+
+  .insertion{
+
+    position: relative;
+    margin-bottom: 81px;
+
+    &:before{
+      content: '';
+      display: block;
+      height: 470px;
+      width: 100%;
+      position: absolute;
+      background: $primary-color;
+      left: 0;
+      top: 300px;
+    }
+  }
+
+  .insertion__wrapper{
+    @include responsive-tablet;
+    max-width: 900px;
+  }
+
+  .insertion__title{
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .insertion__packages{
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 19px 12px 25px 12px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    z-index: 1;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 425px;
+      height: 609px;
+      position: absolute;
+      background: url('../img/author/serg-tablet.png') no-repeat;
+      background-position: center 0;
+      bottom: 0;
+      right: -25px;
+    }
+
+  }
+
+  .insertion__cap{
+    border-radius: 5px 0 0 0;
+    font-size: 16px;
+line-height: 21px;
+  }
+
+  .insertion__cap--mobile-bottom{
+    border-radius: 0 5px 0 0 ;
+  }
+
+  .insertion__list{
+    border: none;
+  }
+
+  .insertion__pack{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .insertion__wrap{
+    flex-grow: 1;
+    border: 1px solid #C8C8C8;
+    border-top: none;
+    border-radius: 0 0 0 5px;
+  }
+
+  .insertion__wrap--tablet-right{
+    border-left: none;
+    border-radius: 0 0 5px 0;
+  }
+
+  .insertion__item{
+    margin-bottom: 30px;
+  }
+
+  .insertion__wrap--tablet-right{
+    flex-shrink: 0;
+    min-width: 350px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .insertion{
+
+  }
+
+  .insertion__wrapper{
+    @include wrapper-desktop;
+  }
+
+  .insertion__title{
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .insertion__packages{
+    width: 1020px;
+    margin: 0 auto;
+
+    &:before{
+      background: url('../img/author/serg-desk.png') no-repeat;
+      background-position: center center;
+      width: 559px;
+      height: 741px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .insertion__item{
+    margin-bottom: 33px;
+  }
+
+  .insertion__pack{
+    width: 472px;
+  }
+
+  .insertion__cap{
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .insertion__wrap{
+    padding-right: 30px;
+    padding-left: 28px;
+  }
+
+}

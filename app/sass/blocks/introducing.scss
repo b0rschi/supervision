@@ -39,3 +39,101 @@
 .introducing__mark{
   color: #1E78FF;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .introducing{
+    padding-top: 36px;
+    background: url('../img/author/bg-desk.jpg') no-repeat;
+    background-position: center -350px;
+    margin-bottom: 44px;
+  }
+
+  .introducing__wrapper{
+    @include wrapper-tablet;
+    background: none;
+  }
+
+  .introducing__title{
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 275px;
+  }
+
+  .introducing__info{
+    width: 100%;
+    padding: 31px 40px 30px 49px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 142%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .introducing{
+    background-position: center -275px;
+    position: relative;
+    margin-bottom: 79px;
+
+    &:before{
+      content: '';
+      display: block;
+      background: #ffffff;
+      position: absolute;
+      height: 137px;
+      width: 20%;
+      right: 0;
+      bottom: 50px;
+    }
+  }
+
+  .introducing__wrapper{
+    @include wrapper-desktop;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 744px;
+      height: 727px;
+      background: url('../img/author/glass-desk.jpg');
+      position: absolute;
+      right: 0;
+      bottom: -540px;
+    }
+  }
+
+  .introducing__title{
+    padding-left: 450px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 50px;
+  }
+
+  .introducing__info{
+    width: 915px;
+    position: relative;
+    z-index: 1;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 65px;
+    height: 65px;
+      left: 452px;
+      top: -30px;
+      background: url('../img/author/Polygon.svg') no-repeat;
+
+    }
+  }
+
+  .introducing__text{
+      font-size: 18px;
+    line-height: 142%;
+  }
+}

@@ -6,6 +6,7 @@
 }
 
 @mixin wrapper-tablet{
+  max-width: none;
   box-sizing: border-box;
   padding: 0 40px;
   width: $tablet-width;
@@ -13,6 +14,7 @@
 }
 
 @mixin wrapper-desktop{
+  max-width: none;
   box-sizing: border-box;
   padding: 0 20px;
   width: 1200px;
@@ -26,4 +28,13 @@
   min-width: 340px;
   width: 80%;
   max-width: 550px;
+}
+
+@mixin responsive-tablet{
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 95%;
+  min-width: 840px;
+  max-width: 1100px;
 }

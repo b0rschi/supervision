@@ -34,3 +34,60 @@
   margin: 0 auto;
   margin-bottom: 13px;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .advantages{
+    padding-top: 0px;
+    background: none;
+    padding-bottom: 68px;
+
+    &:before{
+      width: 47%;
+      height: 194px;
+      top: 160px;
+    }
+  }
+
+  .advantages__wrapper{
+    @include wrapper-tablet;
+    background: url('../img/author/door-tablet.png') no-repeat;
+    background-position: 20px 45px;
+    padding-left: 430px;
+  }
+
+  .advantages__title{
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__item{
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .advantages{
+
+    &:before{
+      height: 319px;
+    }
+  }
+
+  .advantages__wrapper{
+    @include wrapper-desktop;
+    padding-left: 650px;
+    background: url('../img/author/door-desk.png') no-repeat;
+     padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__title{
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 23px;
+  }
+}

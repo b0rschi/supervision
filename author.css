@@ -169,13 +169,13 @@ body {
     padding-left: 450px;
     font-size: 70px;
     line-height: 70px;
-    margin-bottom: 50px; }
+	margin-bottom: 50px;
+	}
   .introducing__info {
     width: 915px;
     position: relative;
-    z-index: 1;
-    position: relative; }
-    .introducing__info:before {
+    z-index: 1; }
+	.introducing__info:before {
       content: '';
       display: block;
       position: absolute;
@@ -417,7 +417,9 @@ body {
   line-height: 18px;
   text-align: center;
   color: #2F2F2F;
-  padding: 10px 28px 10px 22px; }
+  padding: 10px 28px 10px 22px; 
+  margin-bottom: 0px;
+  }
 
 .insertion__cap--mobile-bottom {
   border-radius: 0; }
@@ -542,7 +544,9 @@ body {
     line-height: 46px; }
   .insertion__packages {
     width: 1020px;
-    margin: 0 auto; }
+    margin: 0 auto;
+	justify-content: center;
+	}
     .insertion__packages:before {
       background: url("../img/author/serg-desk.png") no-repeat;
       background-position: center center;
@@ -837,6 +841,8 @@ body {
     background: #FBCC01 url("../img/author/sign-tablet.svg") no-repeat;
     background-position: 34px 24px; }
   .cost__title {
+	  width: 100%;
+	  text-align: center;
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 38px; }
@@ -1009,3 +1015,8 @@ body {
     width: 408px;
     font-size: 19px;
     line-height: 33px; } }
+
+
+.design-full-screen .site{
+background: none !important;
+}
